@@ -1,0 +1,148 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .quiz-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .question {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.1em;
+  }
+  
+  .options-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .option:hover {
+    background-color: #0056b3;
+  }
+  
+  .option:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+  
+  .option.correct {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .option.incorrect {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #1e7e34;
+  }
+  
+  h3 {
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 20px;
+  }
+  
+  #results-container {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+  }
+  
+  #results-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #results-container p {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+  
+  #restart-button {
+    background-color: #6c757d;
+  }
+  
+  #restart-button:hover {
+    background-color: #545b62;
+  }
+  
+  @media (max-width: 480px) {
+    .quiz-container {
+        padding: 20px;
+        width: 95%;
+    }
+  
+    .options-container {
+        grid-template-columns: 1fr;
+    }
+  
+    button {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+  
+    h3 {
+        font-size: 0.8em;
+    }
+  }
