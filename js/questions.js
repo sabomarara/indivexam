@@ -360,6 +360,207 @@ const questions = [
         answer: "Sensitive to outliers"
     },
     {
+    question: "Which of the following is a common task performed by machine learning algorithms?",
+    options: ["Data mining", "Web development", "Clustering", "Database management"],
+    answer: "Clustering"
+  },
+  {
+    question: "What is a common problem encountered in many machine learning algorithms?",
+    options: ["Underfitting", "Overfitting", "Data imbalance", "Feature selection"],
+    answer: "Overfitting"
+  },
+  {
+    question: "What technique is used to reduce overfitting in machine learning models?",
+    options: ["Data imputation", "Regularization", "Normalization", "Scaling"],
+    answer: "Regularization"
+  },
+  {
+    question: "What are the two fundamental causes of prediction error in machine learning models?",
+    options: ["Bias and noise", "Variance and noise", "Bias and variance", "Underfitting and overfitting"],
+    answer: "Bias and variance"
+  },
+  {
+    question: "What does high variance in a model typically lead to?",
+    options: ["Underfitting", "Overfitting", "Optimal fitting", "Data imbalance"],
+    answer: "Overfitting"
+  },
+  {
+    question: "What does high bias in a model typically lead to?",
+    options: ["Overfitting", "Underfitting", "Optimal fitting", "Data imbalance"],
+    answer: "Underfitting"
+  },
+  {
+    question: "Which of the following best describes an under-fitting model?",
+    options: ["Low bias, high variance", "High bias, high variance", "High bias, low variance", "Low bias, low variance"],
+    answer: "High bias, low variance"
+  },
+  {
+    question: "Which of the following best describes an over-fitting model?",
+    options: ["Low bias, low variance", "High bias, low variance", "High bias, high variance", "Low bias, high variance"],
+    answer: "Low bias, high variance"
+  },
+  {
+    question: "How does increasing the amount of training data generally affect the predictive power of machine learning algorithms?",
+    options: ["Decreases", "Increases", "Stays the same", "Becomes unpredictable"],
+    answer: "Increases"
+  },
+  {
+    question: "What is considered crucial in machine learning, along with the amount of data?",
+    options: ["Algorithm complexity", "Data quality", "Computational power", "Model interpretability"],
+    answer: "Data quality"
+  },
+  {
+    question: "What is the ideal combination of bias and variance in a machine learning model?",
+    options: ["High bias, high variance", "High bias, low variance", "Low bias, high variance", "Low bias, low variance"],
+    answer: "Low bias, low variance"
+  },
+  {
+    question: "What is the bias-variance trade-off?",
+    options: ["Balancing data quantity and quality", "The inverse relationship between bias and variance", "Choosing between different machine learning algorithms", "Optimizing computational resources"],
+    answer: "The inverse relationship between bias and variance"
+  },
+  {
+    question: "In machine learning, what do we primarily use instead of writing specific programs for each task?",
+    options: ["Pre-built functions", "Large datasets of examples", "Rule-based systems", "Decision trees"],
+    answer: "Large datasets of examples"
+  },
+  {
+    question: "What is considered the 'soul' of machine learning systems?",
+    options: ["Algorithm efficiency", "Software systems", "Data quality", "Computational speed"],
+    answer: "Data quality"
+  },
+  {
+    question: "What is the consequence of using invalid training data?",
+    options: ["Improved model accuracy", "Invalid results", "Faster training times", "Reduced overfitting"],
+    answer: "Invalid results"
+  },
+  {
+    question: "Does training data need to be perfectly accurate?",
+    options: ["Yes, always", "No, some inaccuracies are acceptable", "Only for small datasets", "Only for specific algorithms"],
+    answer: "No, some inaccuracies are acceptable"
+  },
+  {
+    question: "Which of the following is an example of 'garbage' data in machine learning?",
+    options: ["Correctly labeled images", "Accurate sensor readings", "Missing values", "Consistent data formats"],
+    answer: "Missing values"
+  },
+  {
+    question: "Which of the following is a technique for handling missing data?",
+    options: ["Data normalization", "Data imputation", "Feature scaling", "Data encoding"],
+    answer: "Data imputation"
+  },
+  {
+    question: "What problem can arise when features have large magnitude differences?",
+    options: ["Reduced training time", "Improved model accuracy", "Domination by large magnitude features", "Decreased model complexity"],
+    answer: "Domination by large magnitude features"
+  },
+  {
+    question: "Which of the following is an example used to illustrate the issue of feature magnitude?",
+    options: ["Height and weight", "Age and salary", "Temperature and humidity", "Stock price and volume"],
+    answer: "Age and salary"
+  },
+  {
+    question: "Which of the following is a strategy for handling data imbalance?",
+    options: ["Normalization", "Under sampling", "Feature selection", "Dimensionality reduction"],
+    answer: "Under sampling"
+  },
+  {
+    question: "Which of the following is a challenge in machine learning?",
+    options: ["Requires minimal data", "Requires limited compute power", "Requires knowledgeable data science specialists", "Simplifies data integration"],
+    answer: "Requires knowledgeable data science specialists"
+  },
+  {
+    question: "What is the process of gathering and measuring information from various sources called?",
+    options: ["Data mining", "Data collection", "Data analysis", "Data warehousing"],
+    answer: "Data collection"
+  },
+  {
+    question: "Which of the following is a type of data that can be collected?",
+    options: ["Numeric", "Categorical", "Free text", "All of the above"],
+    answer: "All of the above"
+  },
+  {
+    question: "Why should data be collected and stored in a way that makes sense?",
+    options: ["To reduce storage space", "To develop practical solutions", "To increase data redundancy", "To complicate analysis"],
+    answer: "To develop practical solutions"
+  },
+  {
+    question: "Which of the following is a data set used during ML system development?",
+    options: ["Training set", "Validation set", "Testing set", "All of the above"],
+    answer: "All of the above"
+  },
+  {
+    question: "What is the primary purpose of the validation set?",
+    options: ["To train the ML model", "To evaluate the model's performance on unseen data", "To select and tune the final ML model", "To store the final model"],
+    answer: "To select and tune the final ML model"
+  },
+  {
+    question: "What is the purpose of the test data set?",
+    options: ["To train the ML model", "To select and tune the model", "To evaluate how well the algorithm was trained", "To store the final model"],
+    answer: "To evaluate how well the algorithm was trained"
+  },
+  {
+    question: "Approximately what percentage of data is typically used for the testing set?",
+    options: ["5% to 10%", "50% to 60%", "20% to 30%", "80% to 90%"],
+    answer: "20% to 30%"
+  },
+  {
+    question: "What do successful ML projects integrate into the service/product lifecycle?",
+    options: ["A data storage strategy", "A data collection strategy", "A model deployment strategy", "A user feedback strategy"],
+    answer: "A data collection strategy"
+  },
+  {
+    question: "What is a crucial question to ask when solving a problem with ML?",
+    options: ["What is the computational complexity?", "What is the purpose of the model?", "Which algorithm is the most popular?", "How much storage space is required?"],
+    answer: "What is the purpose of the model?"
+  },
+  {
+    question: "What does data preparation involve?",
+    options: ["Only data cleaning", "Only data formatting", "A set of procedures to make the dataset more suitable for ML", "Only data visualization"],
+    answer: "A set of procedures to make the dataset more suitable for ML"
+  },
+  {
+    question: "What is the potential consequence of missing values in a dataset?",
+    options: ["Improved model performance", "Biased results", "Faster processing", "Reduced complexity"],
+    answer: "Biased results"
+  },
+   {
+    question: "If missingness is unrelated to observed or unobserved data, what type of missing data is it?",
+    options: ["MAR (Missing at Random)", "MNAR (Missing Not at Random)", "MCAR (Missing Completely at Random)", "None of the above"],
+    answer: "MCAR (Missing Completely at Random)"
+  },
+   {
+    question: "Which missing data type occurs when missingness is related to observed variables but not the missing ones?",
+    options: ["MCAR (Missing Completely at Random)", "MNAR (Missing Not at Random)", "MAR (Missing at Random)", "All of the above"],
+    answer: "MAR (Missing at Random)"
+  },
+  {
+    question: "What does MNAR stand for in the context of missing data?",
+    options: ["Missing Numerically at Random", "Missing Not at Random", "Missing at Near Random", "Missing with No Apparent Reason"],
+    answer: "Missing Not at Random"
+  },
+  {
+    question: "Which of the following is a technique for handling missing data by removing rows with any missing values?",
+    options: ["Pairwise Deletion", "Imputation", "Listwise Deletion", "Modeling"],
+    answer: "Listwise Deletion"
+  },
+  {
+    question: "Which method uses available data for analysis without removing entire rows?",
+    options: ["Listwise Deletion", "Pairwise Deletion", "Mean Imputation", "Regression Imputation"],
+    answer: "Pairwise Deletion"
+  },
+  {
+   question: "Replacing missing values with the average value is an example of which imputation method?",
+    options: ["Median Substitution", "Mode Substitution", "Mean Substitution", "KNN Imputation"],
+    answer: "Mean Substitution"
+  },
+   {
+    question: "Which imputation method uses the most frequent value to replace missing data?",
+    options: ["Mean Imputation", "Median Substitution", "Mode Substitution", "Regression Imputation"],
+    answer: "Mode Substitution"
+  }
+,
+    {
         question: "You are the administrator of an active directory domain. A user complains to you that he is unable to change he password. No other users have this issue. What is the most likely cause of the problem?",
         options: [
             "Insufficient login credentials",
