@@ -1,564 +1,963 @@
 const questions = [
     {
-        question: "Which of the following is NOT a component of a decision tree?",
-        options: ["Internal node", "Branches", "Root node", "Leaf node"],
-        answer: "Root node"
+      question: "What is the fundamental purpose of a communications system?",
+      options: [
+        "A. To generate data",
+        "B. To transmit electromagnetic signals",
+        "C. To exchange data between two parties",
+        "D. To transform and encode information"
+      ],
+      answer: "C. To exchange data between two parties"
     },
     {
-        question: "Which of the following techniques is used to reduce the size of decision trees by removing parts that do not provide power to classify instances?",
-        options: ["Overfitting", "Pruning", "Underfitting", "Splitting"],
-        answer: "Pruning"
+      question: "Which device generates the data to be transmitted?",
+      options: ["A. Transmitter", "B. Receiver", "C. Source", "D. Destination"],
+      answer: "C. Source"
     },
     {
-        question: "What is the main difference between pre-pruning and post-pruning?",
-        options: [
-            "Pre-pruning is slower than post-pruning.",
-            "Pre-pruning stops tree construction early, while post-pruning prunes a full tree.",
-            "Post-pruning stops tree construction early, while pre-pruning prunes a full tree.",
-            "There is no difference between pre-pruning and post-pruning."
-        ],
-        answer: "Pre-pruning stops tree construction early, while post-pruning prunes a full tree."
+      question: "What does the transmitter do?",
+      options: [
+        "A. Accepts the signal",
+        "B. Converts the signal into a form that can be handled by the destination device",
+        "C. Generates the data",
+        "D. Transforms and encodes the information into electromagnetic signals"
+      ],
+      answer: "D. Transforms and encodes the information into electromagnetic signals"
     },
     {
-        question: "Which of the following is a symptom of overfitting in decision trees?",
-        options: [
-            "Poor accuracy to classify training samples",
-            "Poor accuracy to classify test samples",
-            "Too few branches",
-            "High generalization capability"
-        ],
-        answer: "Poor accuracy to classify test samples"
+      question: "What is a transmission system?",
+      options: [
+        "A. A device that generates data",
+        "B. A device that accepts the signal",
+        "C. A single transmission line or a complex network connecting source and destination",
+        "D. A device that transforms and encodes information"
+      ],
+      answer: "C. A single transmission line or a complex network connecting source and destination"
     },
     {
-        question: "Which of the following algorithms is NOT a decision tree algorithm?",
-        options: ["ID3", "C4.5", "C5.0", "KNN"],
-        answer: "KNN"
+      question: "What does the receiver do?",
+      options: [
+        "A. Generates the data",
+        "B. Transforms and encodes the information",
+        "C. Accepts the signal from the transmission system and converts it into a form that can be handled by the destination device",
+        "D. Takes the incoming data from the receiver"
+      ],
+      answer: "C. Accepts the signal from the transmission system and converts it into a form that can be handled by the destination device"
     },
     {
-        question: "What is the underlying principle of the K-Nearest Neighbors algorithm?",
-        options: [
-            "It calculates probabilities based on Bayes' theorem.",
-            "It finds patterns by creating decision rules.",
-            "It assumes similar data points are located near each other.",
-            "It separates data points using a hyperplane."
-        ],
-        answer: "It assumes similar data points are located near each other."
+      question: "What does the destination do?",
+      options: [
+        "A. Generates the data",
+        "B. Takes the incoming data from the receiver",
+        "C. Transforms and encodes the information",
+        "D. Accepts the signal from the transmission system"
+      ],
+      answer: "B. Takes the incoming data from the receiver"
     },
     {
-        question: "Which distance measure is commonly used in the K-Nearest Neighbors algorithm?",
-        options: ["Hamming distance", "Euclidean distance", "Manhattan distance", "Cosine distance"],
-        answer: "Euclidean distance"
+      question: "In a data transmission system, what is the transmission medium?",
+      options: [
+        "A. The device that generates the data",
+        "B. The physical path between transmitter and receiver",
+        "C. The device that transforms and encodes the information",
+        "D. The device that accepts the signal"
+      ],
+      answer: "B. The physical path between transmitter and receiver"
     },
     {
-        question: "In KNN, what happens if k is too small?",
-        options: [
-            "The model becomes less sensitive to noise.",
-            "The model becomes oversensitive to noise points.",
-            "The neighborhood includes points from other classes.",
-            "The model's complexity decreases."
-        ],
-        answer: "The model becomes oversensitive to noise points."
+      question: "Which of the following is an example of guided media?",
+      options: [
+        "A. Atmosphere",
+        "B. Outer space",
+        "C. Copper twisted pair",
+        "D. Water"
+      ],
+      answer: "C. Copper twisted pair"
     },
     {
-        question: "Which of the following is an advantage of the K-Nearest Neighbors algorithm?",
-        options: [
-            "It handles high dimensional data well.",
-            "It is computationally efficient for large datasets.",
-            "It has very flexible decision boundaries.",
-            "It is robust to irrelevant features."
-        ],
-        answer: "It has very flexible decision boundaries."
+      question: "Which of the following is an example of unguided media?",
+      options: [
+        "A. Copper coaxial cable",
+        "B. Optical fiber",
+        "C. Copper twisted pair",
+        "D. Atmosphere"
+      ],
+      answer: "D. Atmosphere"
     },
     {
-        question: "What is a disadvantage of the K-Nearest Neighbors algorithm?",
-        options: [
-            "Simple to explain",
-            "Hard to find a good distance measure",
-            "Flexible decision boundaries",
-            "Not much learning"
-        ],
-        answer: "Hard to find a good distance measure"
+      question: "What determines the characteristics and quality of a data transmission?",
+      options: [
+        "A. Only the characteristics of the medium",
+        "B. Only the characteristics of the signal",
+        "C. Both the characteristics of the medium and the characteristics of the signal",
+        "D. None of the above"
+      ],
+      answer: "C. Both the characteristics of the medium and the characteristics of the signal"
     },
     {
-        question: "What does Bayes' theorem calculate?",
-        options: [
-            "The probability of an event occurring",
-            "The conditional probability of an event given evidence",
-            "The distance between data points",
-            "The entropy of a dataset"
-        ],
-        answer: "The conditional probability of an event given evidence"
+      question: "For guided media, what is more important in determining the limitations of transmission?",
+      options: [
+        "A. The bandwidth of the signal",
+        "B. The medium itself",
+        "C. The transmitting antenna",
+        "D. The receiving antenna"
+      ],
+      answer: "B. The medium itself"
     },
     {
-        question: "What is the Naive Bayes classifier known for?",
-        options: ["High complexity", "Simplicity", "Ability to model complex dependencies", "Robustness to outliers"],
-        answer: "Simplicity"
+      question: "For unguided media, what is more important in determining transmission characteristics?",
+      options: [
+        "A. The medium",
+        "B. The bandwidth of the signal produced by the transmitting antenna",
+        "C. The receiving antenna",
+        "D. None of the above"
+      ],
+      answer: "B. The bandwidth of the signal produced by the transmitting antenna"
     },
     {
-        question: "In Bayesian terms, what is 'posterior probability'?",
-        options: [
-            "The probability of evidence",
-            "The probability of a hypothesis before observing the evidence",
-            "The probability of a hypothesis given the evidence",
-            "The joint probability of hypothesis and evidence"
-        ],
-        answer: "The probability of a hypothesis given the evidence"
+      question: "What is a key property of signals transmitted by antenna?",
+      options: [
+        "A. Bandwidth",
+        "B. Directionality",
+        "C. Interference",
+        "D. Attenuation"
+      ],
+      answer: "B. Directionality"
     },
     {
-        question: "What is a key assumption of Naive Bayes?",
-        options: [
-            "Attributes are dependent on each other.",
-            "Attributes are conditionally independent.",
-            "Data is normally distributed.",
-            "Data has no missing values."
-        ],
-        answer: "Attributes are conditionally independent."
+      question: "Signals at lower frequencies are generally:",
+      options: [
+        "A. Directional",
+        "B. Omnidirectional",
+        "C. Focused into a beam",
+        "D. High bandwidth"
+      ],
+      answer: "B. Omnidirectional"
     },
     {
-        question: "What do Bayesian belief networks allow?",
-        options: [
-            "Only classification tasks",
-            "Representation of dependencies among attributes",
-            "Simplified computation with independence assumptions",
-            "Only regression tasks"
-        ],
-        answer: "Representation of dependencies among attributes"
+      question: "At higher frequencies, signals can be:",
+      options: [
+        "A. Omnidirectional",
+        "B. Low bandwidth",
+        "C. Focused into a directional beam",
+        "D. Subject to less interference"
+      ],
+      answer: "C. Focused into a directional beam"
     },
     {
-        question: "What is the primary purpose of a Support Vector Machine (SVM)?",
-        options: ["Clustering", "Dimensionality reduction", "Classification and regression", "Rule-based learning"],
-        answer: "Classification and regression"
+      question: "Which of the following factors determine data rate and distance in data transmission systems?",
+      options: [
+        "A. Bandwidth",
+        "B. Transmission impairments",
+        "C. Interference",
+        "D. All of the above"
+      ],
+      answer: "D. All of the above"
     },
     {
-        question: "What does the decision boundary in an SVM represent?",
-        options: [
-            "A line that minimizes the distance between data points",
-            "A hyperplane that separates the classifications of data points",
-            "A curve that fits the data points",
-            "A vector that points to the nearest data point"
-        ],
-        answer: "A hyperplane that separates the classifications of data points"
+      question: "All other factors remaining constant, what is the relationship between bandwidth and data rate?",
+      options: [
+        "A. The greater the bandwidth, the lower the data rate",
+        "B. The greater the bandwidth, the higher the data rate",
+        "C. Bandwidth does not affect data rate",
+        "D. The relationship is unpredictable"
+      ],
+      answer: "B. The greater the bandwidth, the higher the data rate"
     },
     {
-        question: "What are support vectors?",
-        options: [
-            "Data points far from the decision surface",
-            "Data points closest to the decision surface",
-            "Vectors that support the decision-making process",
-            "Features with the most significant impact"
-        ],
-        answer: "Data points closest to the decision surface"
+      question: "Which type of guided media generally suffers more impairment?",
+      options: [
+        "A. Optical fiber",
+        "B. Coaxial cable",
+        "C. Twisted pair",
+        "D. All suffer equally"
+      ],
+      answer: "C. Twisted pair"
     },
     {
-        question: "What is the Kernel Trick used for in SVM?",
-        options: [
-            "To find the optimal hyperplane in linearly separable data",
-            "To efficiently compute the hyperplane for non-linearly separable data",
-            "To reduce the dimensionality of the data",
-            "To increase the speed of computation"
-        ],
-        answer: "To efficiently compute the hyperplane for non-linearly separable data"
+      question: "What can cause interference in unguided media?",
+      options: [
+        "A. Emanations from nearby cables",
+        "B. Competing signals in overlapping frequency bands",
+        "C. Bundled cables",
+        "D. Shielding"
+      ],
+      answer: "B. Competing signals in overlapping frequency bands"
     },
     {
-        question: "Which of the following is considered a strength of SVM?",
-        options: [
-            "Easy interpretation",
-            "Robust to a very large number of variables",
-            "Requires direct access to data",
-            "Lack of parameters"
-        ],
-        answer: "Robust to a very large number of variables"
+      question: "How can interference be minimized in guided media?",
+      options: [
+        "A. By using unguided transmissions",
+        "B. By bundling cables together",
+        "C. By proper shielding",
+        "D. By increasing the number of receivers"
+      ],
+      answer: "C. By proper shielding"
     },
     {
-        question: "What is the main idea behind ensemble methods?",
-        options: [
-            "To use a single complex classifier",
-            "To combine multiple classifiers to improve performance",
-            "To reduce the dimensionality of the data",
-            "To simplify the classification process"
-        ],
-        answer: "To combine multiple classifiers to improve performance"
+      question: "What happens when a guided medium is used to construct a shared link with multiple attachments?",
+      options: [
+        "A. Data rate increases",
+        "B. Distance increases",
+        "C. Each attachment introduces some attenuation and distortion",
+        "D. Interference is reduced"
+      ],
+      answer: "C. Each attachment introduces some attenuation and distortion"
     },
     {
-        question: "What is bagging?",
-        options: [
-            "Sequential training of classifiers",
-            "Parallel training of classifiers with different training sets",
-            "Training a single classifier multiple times",
-            "Averaging the predictions of multiple classifiers"
-        ],
-        answer: "Parallel training of classifiers with different training sets"
+      question: "What is another name for guided media?",
+      options: ["A. Wireless media", "B. Bounded media", "C. Unguided media", "D. Free space"],
+      answer: "B. Bounded media"
     },
     {
-        question: "How does Random Forest classify a new object?",
-        options: [
-            "By choosing the class with the highest probability",
-            "By averaging the predictions of all trees",
-            "By taking a majority vote of the classifications from all trees",
-            "By selecting the class from the first tree"
-        ],
-        answer: "By taking a majority vote of the classifications from all trees"
+      question: "Which of the following is a type of guided media?",
+      options: ["A. Radio waves", "B. Microwaves", "C. Twisted pair", "D. Infrared"],
+      answer: "C. Twisted pair"
     },
     {
-        question: "What is boosting?",
-        options: [
-            "Parallel training of classifiers",
-            "Random selection of features",
-            "Sequential training, re-weighting examples",
-            "Averaging the predictions"
-        ],
-        answer: "Sequential training, re-weighting examples"
+      question: "What is a twisted pair cable?",
+      options: [
+        "A. A cable that uses electrical signals for communication",
+        "B. A cable that holds optical fibers coated in plastic",
+        "C. A physical media made up of a pair of cables twisted with each other",
+        "D. A cable with two conductors parallel to each other"
+      ],
+      answer: "C. A physical media made up of a pair of cables twisted with each other"
     },
     {
-        question: "In AdaBoost, what does each new classifier focus on?",
-        options: [
-            "The entire dataset",
-            "Data that was correctly classified",
-            "Data that was misclassified",
-            "Random subsets of the data"
-        ],
-        answer: "Data that was misclassified"
+      question: "Compared to other transmission media, twisted pair cable is:",
+      options: ["A. More expensive", "B. Cheaper", "C. Heavier", "D. More difficult to install"],
+      answer: "B. Cheaper"
     },
     {
-        question: "In a confusion matrix, what does 'True Positive' represent?",
-        options: [
-            "Predicted negative values correctly predicted as actual negative",
-            "Predicted positive values correctly predicted as actual positive",
-            "Predicted positive values incorrectly predicted as actual negative",
-            "Predicted negative values incorrectly predicted as actual positive"
-        ],
-        answer: "Predicted positive values correctly predicted as actual positive"
+      question: "What is the frequency range for twisted pair cable?",
+      options: ["A. 0 to 3.5 GHz", "B. 0 to 3.5 KHz", "C. 3 Khz to 1 Ghz", "D. 300 GHz to 400 THz"],
+      answer: "B. 0 to 3.5 KHz"
     },
     {
-        question: "How is accuracy calculated?",
-        options: [
-            "(TP + TN) / (TP + TN + FP + FN)",
-            "(TP + FP) / (TP + TN + FP + FN)",
-            "(TN + FP) / (TP + TN + FP + FN)",
-            "TP / (TP + FP)"
-        ],
-        answer: "(TP + TN) / (TP + TN + FP + FN)"
+      question: "How are the copper wires arranged in a twisted pair?",
+      options: [
+        "A. Parallel to each other",
+        "B. In a regular spiral pattern",
+        "C. Coaxially",
+        "D. In a straight line"
+      ],
+      answer: "B. In a regular spiral pattern"
     },
     {
-        question: "What does 'precision' measure?",
-        options: [
-            "How often the classifier is correct overall",
-            "When it's actually yes, how often does it predict yes?",
-            "When it predicts yes, how often is it correct?",
-            "When it's actually no, how often does it predict no?"
-        ],
-        answer: "When it predicts yes, how often is it correct?"
+      question: "What are the two types of twisted pair cables?",
+      options: [
+        "A. Coaxial and Fiber Optic",
+        "B. Radio waves and Microwaves",
+        "C. Shielded and Unshielded",
+        "D. Infrared and Terrestrial"
+      ],
+      answer: "C. Shielded and Unshielded"
     },
     {
-        question: "What is the misclassification rate also known as?",
-        options: ["Precision", "Recall", "Error Rate", "Specificity"],
-        answer: "Error Rate"
+      question: "Which of the following is a common example of coaxial cable usage?",
+      options: ["A. Telephone wire", "B. TV wire", "C. Computer network cable", "D. Fiber optic cable"],
+      answer: "B. TV wire"
     },
     {
-        question: "What is recall also known as?",
-        options: ["Sensitivity", "Specificity", "Precision", "Accuracy"],
-        answer: "Sensitivity"
+      question: "Why is the cable named 'coaxial'?",
+      options: [
+        "A. Because it is twisted",
+        "B. Because it uses fiber optics",
+        "C. Because it contains two conductors parallel to each other",
+        "D. Because it transmits radio waves"
+      ],
+      answer: "C. Because it contains two conductors parallel to each other"
     },
     {
-        question: "Which measure is NOT used by Decision Trees to find the best splitting attribute?",
-        options: ["Information Gain", "Gain Ratio", "Gini Index", "Euclidean Distance"],
-        answer: "Euclidean Distance"
+      question: "How does the frequency of coaxial cable compare to twisted pair cable?",
+      options: [
+        "A. Lower frequency",
+        "B. Higher frequency",
+        "C. Same frequency",
+        "D. Frequency depends on the application"
+      ],
+      answer: "B. Higher frequency"
     },
     {
-        question: "Which decision tree algorithm can handle numerical target variables but does not support compute rule set?",
-        options: ["ID3", "C4.5", "C5.0", "CART"],
-        answer: "CART"
+      question: "What does a fiber optic cable use for communication?",
+      options: [
+        "A. Electrical signals",
+        "B. Radio waves",
+        "C. Optical fibers coated in plastic",
+        "D. Microwaves"
+      ],
+      answer: "C. Optical fibers coated in plastic"
     },
     {
-        question: "In Decision Trees, what does a leaf node represent?",
-        options: ["A variable/feature", "Output/result", "Labels of class", "A branch"],
-        answer: "Labels of class"
+      question: "What are optical fibers used for in fiber optic cables?",
+      options: [
+        "A. To transmit electrical signals",
+        "B. To send data by pulses of light",
+        "C. To provide insulation",
+        "D. To protect from heat and cold"
+      ],
+      answer: "B. To send data by pulses of light"
     },
     {
-        question: "What is a key disadvantage of K-Nearest Neighbors?",
-        options: ["Conceptually complex", "Requires a lot of computation and memory", "Always provides clear decision boundaries", "Handles irrelevant features very well"],
-        answer: "Requires a lot of computation and memory"
+      question: "What does the plastic coating on fiber optic cables protect against?",
+      options: [
+        "A. Electrical signals",
+        "B. Radio waves",
+        "C. Heat, cold, and electromagnetic interference",
+        "D. Physical damage only"
+      ],
+      answer: "C. Heat, cold, and electromagnetic interference"
     },
     {
-        question: "What is the first step in K-Nearest Neighbors?",
-        options: ["Determine the class from the nearest neighbor list", "searches the pattern space for  the k training tuples", "Calculate the majority vote", "Calculate distance"],
-        answer: "searches the pattern space for  the k training tuples"
+      question: "Compared to copper wires, fiber optics provide:",
+      options: [
+        "A. Slower data transmission",
+        "B. Faster data transmission",
+        "C. The same data transmission speed",
+        "D. Data transmission depends on distance"
+      ],
+      answer: "B. Faster data transmission"
     },
     {
-        question: "What does P(A|B) represent in probability theory?",
-        options: ["The probability of B given A", "The joint probability of A and B", "The conditional probability of A given B", "The probability of A or B"],
-        answer: "The conditional probability of A given B"
+      question: "What is unguided transmission?",
+      options: [
+        "A. Transmission using physical medium",
+        "B. Transmission using copper wires",
+        "C. Transmission that transmits electromagnetic waves without using any physical medium",
+        "D. Transmission through fiber optic cables"
+      ],
+      answer: "C. Transmission that transmits electromagnetic waves without using any physical medium"
     },
     {
-        question: "According to the rules of probability theory, what is P(¬A|B)?",
-        options: ["P(A|B)", "1 + P(A|B)", "1 - P(A|B)", "P(B|A)"],
-        answer: "1 - P(A|B)"
+      question: "What is another name for unguided transmission?",
+      options: [
+        "A. Guided media",
+        "B. Bounded media",
+        "C. Wireless transmission",
+        "D. Coaxial transmission"
+      ],
+      answer: "C. Wireless transmission"
     },
     {
-        question: "In Bayes classification, what is the goal of a learner?",
-        options: ["To minimize the probability distribution", "To find the least probable hypothesis", "To find the most probable hypothesis", "To maximize the observed data"],
-        answer: "To find the most probable hypothesis"
+      question: "In unguided media, what is the medium through which electromagnetic energy flows?",
+      options: ["A. Copper wire", "B. Fiber optic cable", "C. Air", "D. Plastic"],
+      answer: "C. Air"
     },
     {
-        question: "What is the primary function of Support Vector Machines?",
-        options: ["To minimize data points", "To maximize the distance between two classes of data points", "To find non-linear relationships", "To reduce dimensionality"],
-        answer: "To maximize the distance between two classes of data points"
+      question: "What are the three categories of unguided transmission?",
+      options: [
+        "A. Twisted pair, coaxial cable, fiber optics",
+        "B. Radio waves, microwaves, infrared",
+        "C. Simplex, half-duplex, full-duplex",
+        "D. FDM, WDM, TDM"
+      ],
+      answer: "B. Radio waves, microwaves, infrared"
     },
     {
-        question: "In SVM, what is a 'good attribute'?",
-        options: ["Splits the data with maximum impurity", "Prefers attributes that split the data so that each successor node is as pure as possible", "Has a low degree of order", "Has all classes equally likely"],
-        answer: "Prefers attributes that split the data so that each successor node is as pure as possible"
+      question: "What are radio waves?",
+      options: [
+        "A. Electromagnetic waves transmitted through fiber optic cables",
+        "B. Electromagnetic waves transmitted in all directions of free space",
+        "C. Electromagnetic waves used for short-range communication",
+        "D. Electromagnetic waves with frequencies from 1GHz to 1000 GHz"
+      ],
+      answer: "B. Electromagnetic waves transmitted in all directions of free space"
     },
     {
-        question: "Which of the following is NOT a form of ensemble methods?",
-        options: ["Using different algorithms", "Using the same algorithm with different settings", "Assigning different parts of the dataset to different classifiers.", "Using a single decision tree"],
-        answer: "Using a single decision tree"
+      question: "What does 'omnidirectional' mean in the context of radio waves?",
+      options: [
+        "A. Signals are focused in one direction",
+        "B. Signals are transmitted through a physical medium",
+        "C. Signals are propagated in all directions",
+        "D. Signals have high frequency"
+      ],
+      answer: "C. Signals are propagated in all directions"
     },
     {
-        question: "What is the simplest approach in ensemble methods?",
-        options: ["Boosting", "Bagging", "Generate multiple classification models, each votes on test instance", "Mixture of experts"],
-        answer: "Generate multiple classification models, each votes on test instance"
+      question: "What is the frequency range of radio waves?",
+      options: ["A. 300 GHz to 400 THz", "B. 1 GHz to 1000 GHz", "C. 3 Khz to 1 Ghz", "D. Above 1000 GHz"],
+      answer: "C. 3 Khz to 1 Ghz"
     },
     {
-        question: "In Bagging, how are predictions combined?",
-        options: ["Weighted average", "Probabilistic methods", "Uniform averaging or voting over class labels", "Mixture of experts"],
-        answer: "Uniform averaging or voting over class labels"
+      question: "In radio waves, how are the sending and receiving antennas aligned?",
+      options: [
+        "A. They are aligned in a straight line",
+        "B. They are precisely aligned",
+        "C. They are not aligned",
+        "D. Alignment is not a factor"
+      ],
+      answer: "C. They are not aligned"
     },
     {
-        question: "What is the main characteristic of boosting algorithms?",
-        options: ["They train each classifier independently.", "They combine weak learners into strong learners by creating sequential models.", "They assign equal weights to all classifiers.", "They reduce the size of the training set."],
-        answer: "They combine weak learners into strong learners by creating sequential models."
+      question: "Which of the following is an example of radio waves?",
+      options: ["A. TV remote", "B. Satellite communication", "C. FM radio", "D. Cell phone data transfer"],
+      answer: "C. FM radio"
     },
     {
-        question: "Which algorithm is a well-known example of boosting?",
-        options: ["Random Forest", "AdaBoost", "Bagging", "Mixture of Experts"],
-        answer: "AdaBoost"
+   
+      question: "What are the two types of microwaves?",
+      options: [
+        "A. Terrestrial and satellite",
+        "B. Radio and infrared",
+        "C. Low and high frequency",
+        "D. Guided and unguided"
+      ],
+      answer: "A. Terrestrial and satellite"
     },
     {
-        question: "What does entropy in information theory measure?",
-        options: ["The amount of noise in the data", "The number of features", "The minimum number of bits needed to encode the classification accuracy of an instance", "The complexity of the model"],
-        answer: "The minimum number of bits needed to encode the classification accuracy of an instance"
+      question: "What is the frequency range of microwaves?",
+      options: ["A. 3 Khz to 1 Ghz", "B. 300 GHz to 400 THz", "C. 1 GHz to 1000 GHz", "D. Above 1000 GHz"],
+      answer: "C. 1 GHz to 1000 GHz"
     },
     {
-        question: "What does Information Gain tell us?",
-        options: ["How much noise is in the data", "How many attributes to use", "How much would be gained by branching on A", "The complexity of the model"],
-        answer: "How much would be gained by branching on A"
+      question: "How are microwaves transmitted in terrestrial microwave transmission?",
+      options: [
+        "A. Omnidirectionally",
+        "B. Through cables",
+        "C. Through optical fibers",
+        "D. Via line-of-sight transmission"
+      ],
+      answer: "D."},
+
+ 
+    {
+      question: "What is the typical frequency range for satellite microwave transmission?",
+      options: ["A. 2 to 4 GHz", "B. 1 to 2 GHz", "C. 30 to 300 MHz", "D. 1 to 40 GHz"],
+      answer: "D. 1 to 40 GHz"
     },
     {
-        question: "What is a key difference between Bagging and AdaBoost?",
-        options: ["Bagging trains models sequentially, AdaBoost trains in parallel.", "Bagging assigns weights to classifiers, AdaBoost does not.", "In each round, Bagging has a uniform distribution, while AdaBoost adapts a non-uniform distribution.", "Bagging is sensitive to outliers, AdaBoost is robust to outliers."],
-        answer: "In each round, Bagging has a uniform distribution, while AdaBoost adapts a non-uniform distribution."
+      question: "Why are higher frequencies used for satellite communication?",
+      options: [
+        "A. To avoid atmospheric absorption",
+        "B. To achieve omnidirectional transmission",
+        "C. To reduce interference from terrestrial microwaves",
+        "D. To use smaller antennas"
+      ],
+      answer: "A. To avoid atmospheric absorption"
     },
     {
-        question: "What is a characteristic of Gradient Boosted Decision Trees?",
-        options: ["They use very deep trees.", "They build trees in a parallel manner.", "They often use very shallow trees", "They are less sensitive to parameter settings than Random Forests."],
-        answer: "They often use very shallow trees"
+      question: "What is the primary application of infrared?",
+      options: [
+        "A. Long-distance communication",
+        "B. Short-range communication",
+        "C. Satellite communication",
+        "D. Radio broadcasting"
+      ],
+      answer: "B. Short-range communication"
     },
     {
-        question: "Which of the following is a disadvantage of AdaBoost?",
-        options: ["High generalization error", "Complex to code", "Sensitive to outliers", "Works only with numeric values"],
-        answer: "Sensitive to outliers"
+      question: "Can infrared pass through walls?",
+      options: ["A. Yes", "B. No", "C. Sometimes", "D. It depends on the frequency"],
+      answer: "B. No"
     },
     {
-    question: "Which of the following is a common task performed by machine learning algorithms?",
-    options: ["Data mining", "Web development", "Clustering", "Database management"],
-    answer: "Clustering"
-  },
-  {
-    question: "What is a common problem encountered in many machine learning algorithms?",
-    options: ["Underfitting", "Overfitting", "Data imbalance", "Feature selection"],
-    answer: "Overfitting"
-  },
-  {
-    question: "What technique is used to reduce overfitting in machine learning models?",
-    options: ["Data imputation", "Regularization", "Normalization", "Scaling"],
-    answer: "Regularization"
-  },
-  {
-    question: "What are the two fundamental causes of prediction error in machine learning models?",
-    options: ["Bias and noise", "Variance and noise", "Bias and variance", "Underfitting and overfitting"],
-    answer: "Bias and variance"
-  },
-  {
-    question: "What does high variance in a model typically lead to?",
-    options: ["Underfitting", "Overfitting", "Optimal fitting", "Data imbalance"],
-    answer: "Overfitting"
-  },
-  {
-    question: "What does high bias in a model typically lead to?",
-    options: ["Overfitting", "Underfitting", "Optimal fitting", "Data imbalance"],
-    answer: "Underfitting"
-  },
-  {
-    question: "Which of the following best describes an under-fitting model?",
-    options: ["Low bias, high variance", "High bias, high variance", "High bias, low variance", "Low bias, low variance"],
-    answer: "High bias, low variance"
-  },
-  {
-    question: "Which of the following best describes an over-fitting model?",
-    options: ["Low bias, low variance", "High bias, low variance", "High bias, high variance", "Low bias, high variance"],
-    answer: "Low bias, high variance"
-  },
-  {
-    question: "How does increasing the amount of training data generally affect the predictive power of machine learning algorithms?",
-    options: ["Decreases", "Increases", "Stays the same", "Becomes unpredictable"],
-    answer: "Increases"
-  },
-  {
-    question: "What is considered crucial in machine learning, along with the amount of data?",
-    options: ["Algorithm complexity", "Data quality", "Computational power", "Model interpretability"],
-    answer: "Data quality"
-  },
-  {
-    question: "What is the ideal combination of bias and variance in a machine learning model?",
-    options: ["High bias, high variance", "High bias, low variance", "Low bias, high variance", "Low bias, low variance"],
-    answer: "Low bias, low variance"
-  },
-  {
-    question: "What is the bias-variance trade-off?",
-    options: ["Balancing data quantity and quality", "The inverse relationship between bias and variance", "Choosing between different machine learning algorithms", "Optimizing computational resources"],
-    answer: "The inverse relationship between bias and variance"
-  },
-  {
-    question: "In machine learning, what do we primarily use instead of writing specific programs for each task?",
-    options: ["Pre-built functions", "Large datasets of examples", "Rule-based systems", "Decision trees"],
-    answer: "Large datasets of examples"
-  },
-  {
-    question: "What is considered the 'soul' of machine learning systems?",
-    options: ["Algorithm efficiency", "Software systems", "Data quality", "Computational speed"],
-    answer: "Data quality"
-  },
-  {
-    question: "What is the consequence of using invalid training data?",
-    options: ["Improved model accuracy", "Invalid results", "Faster training times", "Reduced overfitting"],
-    answer: "Invalid results"
-  },
-  {
-    question: "Does training data need to be perfectly accurate?",
-    options: ["Yes, always", "No, some inaccuracies are acceptable", "Only for small datasets", "Only for specific algorithms"],
-    answer: "No, some inaccuracies are acceptable"
-  },
-  {
-    question: "Which of the following is an example of 'garbage' data in machine learning?",
-    options: ["Correctly labeled images", "Accurate sensor readings", "Missing values", "Consistent data formats"],
-    answer: "Missing values"
-  },
-  {
-    question: "Which of the following is a technique for handling missing data?",
-    options: ["Data normalization", "Data imputation", "Feature scaling", "Data encoding"],
-    answer: "Data imputation"
-  },
-  {
-    question: "What problem can arise when features have large magnitude differences?",
-    options: ["Reduced training time", "Improved model accuracy", "Domination by large magnitude features", "Decreased model complexity"],
-    answer: "Domination by large magnitude features"
-  },
-  {
-    question: "Which of the following is an example used to illustrate the issue of feature magnitude?",
-    options: ["Height and weight", "Age and salary", "Temperature and humidity", "Stock price and volume"],
-    answer: "Age and salary"
-  },
-  {
-    question: "Which of the following is a strategy for handling data imbalance?",
-    options: ["Normalization", "Under sampling", "Feature selection", "Dimensionality reduction"],
-    answer: "Under sampling"
-  },
-  {
-    question: "Which of the following is a challenge in machine learning?",
-    options: ["Requires minimal data", "Requires limited compute power", "Requires knowledgeable data science specialists", "Simplifies data integration"],
-    answer: "Requires knowledgeable data science specialists"
-  },
-  {
-    question: "What is the process of gathering and measuring information from various sources called?",
-    options: ["Data mining", "Data collection", "Data analysis", "Data warehousing"],
-    answer: "Data collection"
-  },
-  {
-    question: "Which of the following is a type of data that can be collected?",
-    options: ["Numeric", "Categorical", "Free text", "All of the above"],
-    answer: "All of the above"
-  },
-  {
-    question: "Why should data be collected and stored in a way that makes sense?",
-    options: ["To reduce storage space", "To develop practical solutions", "To increase data redundancy", "To complicate analysis"],
-    answer: "To develop practical solutions"
-  },
-  {
-    question: "Which of the following is a data set used during ML system development?",
-    options: ["Training set", "Validation set", "Testing set", "All of the above"],
-    answer: "All of the above"
-  },
-  {
-    question: "What is the primary purpose of the validation set?",
-    options: ["To train the ML model", "To evaluate the model's performance on unseen data", "To select and tune the final ML model", "To store the final model"],
-    answer: "To select and tune the final ML model"
-  },
-  {
-    question: "What is the purpose of the test data set?",
-    options: ["To train the ML model", "To select and tune the model", "To evaluate how well the algorithm was trained", "To store the final model"],
-    answer: "To evaluate how well the algorithm was trained"
-  },
-  {
-    question: "Approximately what percentage of data is typically used for the testing set?",
-    options: ["5% to 10%", "50% to 60%", "20% to 30%", "80% to 90%"],
-    answer: "20% to 30%"
-  },
-  {
-    question: "What do successful ML projects integrate into the service/product lifecycle?",
-    options: ["A data storage strategy", "A data collection strategy", "A model deployment strategy", "A user feedback strategy"],
-    answer: "A data collection strategy"
-  },
-  {
-    question: "What is a crucial question to ask when solving a problem with ML?",
-    options: ["What is the computational complexity?", "What is the purpose of the model?", "Which algorithm is the most popular?", "How much storage space is required?"],
-    answer: "What is the purpose of the model?"
-  },
-  {
-    question: "What does data preparation involve?",
-    options: ["Only data cleaning", "Only data formatting", "A set of procedures to make the dataset more suitable for ML", "Only data visualization"],
-    answer: "A set of procedures to make the dataset more suitable for ML"
-  },
-  {
-    question: "What is the potential consequence of missing values in a dataset?",
-    options: ["Improved model performance", "Biased results", "Faster processing", "Reduced complexity"],
-    answer: "Biased results"
-  },
-   {
-    question: "If missingness is unrelated to observed or unobserved data, what type of missing data is it?",
-    options: ["MAR (Missing at Random)", "MNAR (Missing Not at Random)", "MCAR (Missing Completely at Random)", "None of the above"],
-    answer: "MCAR (Missing Completely at Random)"
-  },
-   {
-    question: "Which missing data type occurs when missingness is related to observed variables but not the missing ones?",
-    options: ["MCAR (Missing Completely at Random)", "MNAR (Missing Not at Random)", "MAR (Missing at Random)", "All of the above"],
-    answer: "MAR (Missing at Random)"
-  },
-  {
-    question: "What does MNAR stand for in the context of missing data?",
-    options: ["Missing Numerically at Random", "Missing Not at Random", "Missing at Near Random", "Missing with No Apparent Reason"],
-    answer: "Missing Not at Random"
-  },
-  {
-    question: "Which of the following is a technique for handling missing data by removing rows with any missing values?",
-    options: ["Pairwise Deletion", "Imputation", "Listwise Deletion", "Modeling"],
-    answer: "Listwise Deletion"
-  },
-  {
-    question: "Which method uses available data for analysis without removing entire rows?",
-    options: ["Listwise Deletion", "Pairwise Deletion", "Mean Imputation", "Regression Imputation"],
-    answer: "Pairwise Deletion"
-  },
-  {
-   question: "Replacing missing values with the average value is an example of which imputation method?",
-    options: ["Median Substitution", "Mode Substitution", "Mean Substitution", "KNN Imputation"],
-    answer: "Mean Substitution"
-  },
-   {
-    question: "Which imputation method uses the most frequent value to replace missing data?",
-    options: ["Mean Imputation", "Median Substitution", "Mode Substitution", "Regression Imputation"],
-    answer: "Mode Substitution"
-  }
+      question: "Which of the following is an example of infrared technology?",
+      options: ["A. FM radio", "B. Satellite TV", "C. TV remote", "D. Microwave oven"],
+      answer: "C. TV remote"
+    },
+    {
+      question: "What is simplex transmission?",
+      options: [
+        "A. Data exchange in both directions simultaneously",
+        "B. Data exchange in both directions, but only one at a time",
+        "C. Data transmission in one direction only",
+        "D. Data transmission with error correction"
+      ],
+      answer: "C. Data transmission in one direction only"
+    },
+    {
+      question: "Which of the following is an example of simplex transmission?",
+      options: ["A. Telephone conversation", "B. Walking", "C. Television broadcasting", "D. Internet browsing"],
+      answer: "C. Television broadcasting"
+    },
+    {
+      question: "What is half-duplex transmission?",
+      options: [
+        "A. Data transmission in one direction only",
+        "B. Data exchange in both directions simultaneously",
+        "C. Data exchange in both directions, but only one at a time",
+        "D. Data transmission with acknowledgment"
+      ],
+      answer: "C. Data exchange in both directions, but only one at a time"
+    },
+    {
+      question: "Which of the following is an example of half-duplex transmission?",
+      options: ["A. Telephone conversation", "B. Walking", "C. Two-way radio", "D. Television broadcasting"],
+      answer: "C. Two-way radio"
+    },
+    {
+      question: "What is full-duplex transmission?",
+      options: [
+        "A. Data transmission in one direction only",
+        "B. Data exchange in both directions simultaneously",
+        "C. Data exchange in both directions, but only one at a time",
+        "D. Data transmission with flow control"
+      ],
+      answer: "B. Data exchange in both directions simultaneously"
+    },
+    {
+      question: "Which of the following is an example of full-duplex transmission?",
+      options: ["A. Walking", "B. Internet browsing", "C. Two-way radio", "D. Television broadcasting"],
+      answer: "B. Internet browsing"
+    },
+    {
+      question: "What is a network?",
+      options: [
+        "A. A single device",
+        "B. A collection of interconnected devices",
+        "C. A transmission medium",
+        "D. A communication protocol"
+      ],
+      answer: "B. A collection of interconnected devices"
+    },
+    {
+      question: "What is the primary goal of a network?",
+      options: [
+        "A. To isolate devices",
+        "B. To provide communication between devices",
+        "C. To generate data",
+        "D. To transmit signals"
+      ],
+      answer: "B. To provide communication between devices"
+    },
+    {
+      question: "What are the three criteria necessary for an effective and efficient network?",
+      options: [
+        "A. Performance, reliability, security",
+        "B. Speed, cost, size",
+        "C. Simplicity, flexibility, scalability",
+        "D. Topology, protocol, medium"
+      ],
+      answer: "A. Performance, reliability, security"
+    },
+    {
+      question: "What does 'performance' refer to in the context of network criteria?",
+      options: [
+        "A. The ability to recover from failures",
+        "B. The level of protection against unauthorized access",
+        "C. The speed and efficiency of data transfer",
+        "D. The physical arrangement of the network"
+      ],
+      answer: "C. The speed and efficiency of data transfer"
+    },
+    {
+      question: "Which of the following metrics is used to evaluate network performance?",
+      options: [
+        "A. Reliability",
+        "B. Security",
+        "C. Throughput",
+        "D. Topology"
+      ],
+      answer: "C. Throughput"
+    },
+    {
+      question: "What is 'throughput'?",
+      options: [
+        "A. The frequency of failures",
+        "B. The amount of data that can pass through the network in a given period of time",
+        "C. The time it takes for a message to travel from one device to another",
+        "D. The number of unauthorized access attempts"
+      ],
+      answer: "B. The amount of data that can pass through the network in a given period of time"
+    },
+    {
+      question: "What is 'delay' in network performance?",
+      options: [
+        "A. The amount of data transmitted per unit of time",
+        "B. The time it takes for a message to travel from one device to another",
+        "C. The frequency of network failures",
+        "D. The level of data encryption"
+      ],
+      answer: "B. The time it takes for a message to travel from one device to another"
+    },
+    {
+      question: "What is 'reliability' in network criteria?",
+      options: [
+        "A. The speed of data transfer",
+        "B. The protection against unauthorized access",
+        "C. The ability to recover from failures",
+        "D. The physical arrangement of the network"
+      ],
+      answer: "C. The ability to recover from failures"
+    },
+    {
+      question: "Which of the following is a measure of network reliability?",
+      options: [
+        "A. Delay",
+        "B. Throughput",
+        "C. Frequency of failures",
+        "D. Bandwidth"
+      ],
+      answer: "C. Frequency of failures"
+    },
+    {
+      question: "What is 'security' in network criteria?",
+      options: [
+        "A. The speed of data transfer",
+        "B. The ability to recover from failures",
+        "C. The physical arrangement of the network",
+        "D. The level of protection against unauthorized access"
+      ],
+      answer: "D. The level of protection against unauthorized access"
+    },
+    {
+      question: "Which of the following is a network security challenge?",
+      options: [
+        "A. High throughput",
+        "B. Low delay",
+        "C. Unauthorized access",
+        "D. High reliability"
+      ],
+      answer: "C. Unauthorized access"
+    },
+    {
+      question: "What is 'topology' in a network?",
+      options: [
+        "A. The speed of data transfer",
+        "B. The physical arrangement of network elements",
+        "C. The set of rules governing data communication",
+        "D. The type of transmission medium used"
+      ],
+      answer: "B. The physical arrangement of network elements"
+    },
+    {
+      question: "Which of the following is a common network topology?",
+      options: ["A. Protocol", "B. Medium", "C. Star", "D. Bandwidth"],
+      answer: "C. Star"
+    },
+    {
+      question: "What is a 'protocol' in networking?",
+      options: [
+        "A. The physical arrangement of network elements",
+        "B. The speed of data transfer",
+        "C. The set of rules governing data communication",
+        "D. The transmission medium used"
+      ],
+      answer: "C. The set of rules governing data communication"
+    },
+    {
+      question: "Which of the following is an example of a network protocol?",
+      options: ["A. Star", "B. Coaxial cable", "C. TCP/IP", "D. Throughput"],
+      answer: "C. TCP/IP"
+    },
+    {
+      question: "What is 'mode of communication' in networking?",
+      options: [
+        "A. The physical arrangement of network elements",
+        "B. The speed of data transfer",
+        "C. The way data is transmitted between two devices",
+        "D. The set of rules governing data communication"
+      ],
+      answer: "C. The way data is transmitted between two devices"
+    },
+    {
+      question: "Which of the following is a mode of communication?",
+      options: ["A. Star", "B. Simplex", "C. TCP/IP", "D. Coaxial cable"],
+      answer: "B. Simplex"
+    },
+    {
+      question: "What is a 'node' in a network?",
+      options: [
+        "A. A connection between two devices",
+        "B. Any device capable of communication",
+        "C. The speed of data transfer",
+        "D. A set of rules governing data communication"
+      ],
+      answer: "B. Any device capable of communication"
+    },
+    {
+      question: "Which of the following can be considered a node in a network?",
+      options: ["A. Cable", "B. Router", "C. Protocol", "D. Topology"],
+      answer: "B. Router"
+    },
+    {
+      question: "What is a 'link' in a network?",
+      options: [
+        "A. A device capable of communication",
+        "B. The speed of data transfer",
+        "C. A connection between two nodes",
+        "D. A set of rules governing data communication"
+      ],
+      answer: "C. A connection between two nodes"
+    },
+    {
+      question: "Which of the following is an example of a link in a network?",
+      options: ["A. Router", "B. Cable", "C. Protocol", "D. Topology"],
+      answer: "B. Cable"
+    },
+    {
+      question: "What is 'distributed processing'?",
+      options: [
+        "A. Processing that occurs in a single device",
+        "B. Processing that is divided among multiple devices",
+        "C. Data transmission over long distances",
+        "D. Data reception from multiple sources"
+      ],
+      answer: "B. Processing that is divided among multiple devices"
+    },
+    {
+      question: "What is a key advantage of distributed processing?",
+      options: [
+        "A. Increased complexity",
+        "B. Higher cost",
+        "C. Resource sharing",
+        "D. Centralized control"
+      ],
+      answer: "C. Resource sharing"
+    },
+    {
+      question: "What is a 'network criteria'?",
+      options: [
+        "A. A device capable of communication",
+        "B. A connection between two nodes",
+        "C. A set of rules governing data communication",
+        "D. Factors that affect the performance and effectiveness of a network"
+      ],
+      answer: "D. Factors that affect the performance and effectiveness of a network"
+    },
+    {
+      question: "Which of the following is a network criteria?",
+      options: ["A. Topology", "B. Protocol", "C. Security", "D. Node"],
+      answer: "C. Security"
+    },
+    {
+      question: "What is the OSI model?",
+      options: [
+        "A. A hardware configuration for networks",
+        "B. A set of protocols for data transmission",
+        "C. A conceptual framework for network communication",
+        "D. A type of network topology"
+      ],
+      answer: "C. A conceptual framework for network communication"
+    },
+    {
+      question: "How many layers are in the OSI model?",
+      options: ["A. 5", "B. 6", "C. 7", "D. 8"],
+      answer: "C. 7"
+    },
+    {
+      question: "What is the purpose of the OSI model?",
+      options: [
+        "A. To define network hardware",
+        "B. To provide a standard for communication between different systems",
+        "C. To control network traffic",
+        "D. To encrypt data"
+      ],
+      answer: "B. To provide a standard for communication between different systems"
+    },
+    {
+      question: "Which layer is the lowest layer in the OSI model?",
+      options: [
+        "A. Application layer",
+        "B. Transport layer",
+        "C. Physical layer",
+        "D. Data link layer"
+      ],
+      answer: "C. Physical layer"
+    },
+    {
+      question: "Which layer is responsible for transmitting bits over a physical medium?",
+      options: [
+        "A. Data link layer",
+        "B. Network layer",
+        "C. Transport layer",
+        "D. Physical layer"
+      ],
+      answer: "D. Physical layer"
+    },
+    {
+      question: "Which layer is responsible for error-free delivery of data?",
+      options: [
+        "A. Physical layer",
+        "B. Network layer",
+        "C. Data link layer",
+        "D. Transport layer"
+      ],
+      answer: "C. Data link layer"
+    },
+    {
+      question: "What is 'framing'?",
+      options: [
+        "A. The process of dividing data into packets at the network layer",
+        "B. The process of converting data into electrical signals",
+        "C. The process of dividing data into frames at the data link layer",
+        "D. The process of establishing a connection between two devices"
+      ],
+      answer: "C. The process of dividing data into frames at the data link layer"
+    },
+    {
+      question: "Which layer is responsible for logical addressing?",
+      options: [
+        "A. Data link layer",
+        "B. Physical layer",
+        "C. Network layer",
+        "D. Transport layer"
+      ],
+      answer: "C. Network layer"
+    },
+    {
+      question: "What is the primary function of the network layer?",
+      options: [
+        "A. Physical transmission of data",
+        "B. Error control and flow control",
+        "C. Routing packets across networks",
+        "D. End-to-end delivery of data"
+      ],
+      answer: "C. Routing packets across networks"
+    },
+    {
+      question: "Which layer is responsible for end-to-end delivery of data?",
+      options: [
+        "A. Network layer",
+        "B. Data link layer",
+        "C. Transport layer",
+        "D. Physical layer"
+      ],
+      answer: "C. Transport layer"
+    },
+    {
+      question: "What does TCP provide?",
+      options: [
+        "A. Unreliable, connectionless service",
+        "B. Reliable, connection-oriented service",
+        "C. Flow control only",
+        "D. Congestion control only"
+      ],
+      answer: "B. Reliable, connection-oriented service"
+    },
+    {
+      question: "What does UDP provide?",
+      options: [
+        "A. Reliable, connection-oriented service",
+        "B. Unreliable, connectionless service",
+        "C. Flow control",
+        "D. Congestion control"
+      ],
+      answer: "B. Unreliable, connectionless service"
+    },
+    {
+      question: "Which layer is responsible for providing services like email and file transfer?",
+      options: [
+        "A. Transport layer",
+        "B. Network layer",
+        "C. Data link layer",
+        "D. Application layer"
+      ],
+      answer: "D. Application layer"
+    },
+    {
+      question: "What is the purpose of service-point addressing or port address?",
+      options: [
+        "A. To identify a physical device on the network",
+        "B. To identify a process within a computer",
+        "C. To route packets across networks",
+        "D. To ensure reliable data delivery"
+      ],
+      answer: "B. To identify a process within a computer"
+    },
+    {
+      question: "What is segmentation and reassembly?",
+      options: [
+        "A. Dividing data into packets at the network layer",
+        "B. Dividing data into segments",
+
+        "C. Encapsulating data at the data link layer",
+        "D. Compressing data at the application layer"
+      ],
+      answer: "B. Dividing data into segments "
+    },
+    {
+      question: "Which layer is closest to the transmission medium?",
+      options: [
+        "A. Application layer",
+        "B. Physical layer",
+        "C. Transport layer",
+        "D. Network layer"
+      ],
+      answer: "B. Physical layer"
+    },
+    {
+      question: "Which layer is responsible for the overall flow of information from one end user to another?",
+      options: [
+        "A. Network layer",
+        "B. Data link layer",
+        "C. Transport layer",
+        "D. Application layer"
+      ],
+      answer: "C. Transport layer"
+    },
+    {
+      question: "What is the function of the application layer?",
+      options: [
+        "A. To provide physical connections between devices",
+        "B. To route data packets across networks",
+        "C. To provide services to the user",
+        "D. To ensure reliable data delivery"
+      ],
+      answer: "C. To provide services to the user"
+    },
+    {
+      question: "Which layer in the OSI model is responsible for establishing, managing, and terminating sessions?",
+      options: [
+        "A. Transport layer",
+        "B. Session layer",
+        "C. Presentation layer",
+        "D. Application layer"
+      ],
+      answer: "B. Session layer"
+    },
+    {
+      question: "Which layer is responsible for data format and encryption?",
+      options: [
+        "A. Application layer",
+        "B. Session layer",
+        "C. Presentation layer",
+        "D. Transport layer"
+      ],
+      answer: "C. Presentation layer"
+    },
+    {
+      question: "Which layer is responsible for the reliability of end-to-end delivery over either a circuit-switched or a packet-switched network?",
+      options: [
+        "A. Network layer",
+        "B. Transport layer",
+        "C. Session layer",
+        "D. Data link layer"
+      ],
+      answer: "B. Transport layer"
+    },
+    {
+      question: "Which layer is responsible for the reliable node-to-node delivery of data between two directly connected nodes?",
+      options: [
+        "A. Network layer",
+        "B. Data link layer",
+        "C. Physical layer",
+        "D. Transport layer"
+      ],
+      answer: "B. Data link layer"
+    },
+    {
+      question: "Which layer is responsible for moving individual bits from one node to the next?",
+      options: [
+        "A. Transport layer",
+        "B. Data link layer",
+        "C. Physical layer",
+        "D. Network layer"
+      ],
+      answer: "C. Physical layer"
+    },
+    {
+      question: "Which layer is responsible for the delivery of a message from one process to another?",
+      options: [
+        "A. Network layer",
+        "B. Transport layer",
+        "C. Session layer",
+        "D. Application layer"
+      ],
+      answer: "D. Application layer"
+    }
+  
 ,
     {
         question: "You are the administrator of an active directory domain. A user complains to you that he is unable to change he password. No other users have this issue. What is the most likely cause of the problem?",
